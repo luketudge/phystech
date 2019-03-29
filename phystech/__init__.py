@@ -9,8 +9,8 @@ from os import path
 
 # Path to the example data file.
 # Might be useful for tests.
-EXAMPLEFILE = glob(path.join(path.dirname(__file__), '*.h5'))[0]
+EXAMPLEFILES = glob(path.join(path.dirname(path.abspath(__file__)), 'data', '*.h5'))
 
-# Example datasets in the file.
+# Example datasets in the files.
 EXAMPLEDATA = ['eVEnerg:io1200000cff','A2980:23303chan1']
 
